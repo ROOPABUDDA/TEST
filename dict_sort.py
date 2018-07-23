@@ -9,10 +9,7 @@ def solve (S, N):
             my_dict[each] = 1
     myList = [v[0] for v in sorted(my_dict.items(), key=lambda kv: (-kv[1], kv[0]))]
     
-    print(len(myList))
-    for each in myList:
-        print(each)
-    
+    return myList    
 
 N = int(input())
 S = []
